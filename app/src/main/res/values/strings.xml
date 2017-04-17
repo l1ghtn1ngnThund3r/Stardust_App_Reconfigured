@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stardust</string>
+    <string name="meat">Meat:Chicken</string>
+    <string name="extras">Extras:Lettuce, Pickles, Tomato </string>
+    <string name="sides">Sides:Potato Chips, Salad, Fresh Vegetables</string>
+    <string name="address">1842 E Winter Park Rd Orlando, FL 32803</string>
+    <string name="options">Options: </string>
+    <string name="espresso">Espresso</string>
+    <string name="americano">Americano</string>
+    <string name="drinks_title">Drinks</string>
+    <string name="Coffee">Coffee</string>
+    <string name="coffee_title">Coffee</string>
+    <string name="sandwiches_title">Sandwiches</string>
+    <string name="placeHolder">Placeholder String</string>
+    <string name="menu_menu">Menu</string>
+    <string name="drink_menu">Drink Menu</string>
+    <string name="food_menu">Food Menu</string>
+    <string name="food_title">Food</string>
+
+
+</resources>
