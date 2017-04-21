@@ -1,0 +1,28 @@
+<resources>
+    <string-array name="drinkMenu">
+        <item>Coffee</item>
+        <item>Amerincano</item>
+        <item>Espresso</item>
+        <item>Tangerine</item>
+
+    </string-array>
+    <string-array name="drinkDescription">
+        <item>Black and Delicious, cream is optional</item>
+        <item>Hot Water and a lot of Caffeine</item>
+        <item>A lot of caffeine</item>
+        <item>A light, crisp Floridian Beer</item>
+
+    </string-array>
+    <string-array name="foodMenu">
+        <item>Waffles</item>
+        <item>Quesadilla</item>
+        <item>Cuban Sandwich</item>
+        <item>Lulu Salad</item>
+    </string-array>
+    <string-array name="foodDescription">
+        <item>Golden and crispy</item>
+        <item>Cheesy with a side of chips</item>
+        <item>Pickles!</item>
+        <item>A lot of super foods</item>
+    </string-array>
+</resources>

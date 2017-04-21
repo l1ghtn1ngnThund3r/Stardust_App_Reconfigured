@@ -15,23 +15,26 @@ import android.widget.*;
 import java.util.ArrayList;
 
 /**
- * Food Menu for Stardust App
- * Created by avz95 on 4/9/17.
+ * Food Menu for Mock-Stardust App
  */
 
 public class FoodMenu extends AppCompatActivity {
 
     //List of Menu Items and their descriptions
-    String[] menuItem = {"Waffles", "Quesadilla", "Cuban Sandwich", "Lulu Salad"};
-    String[] itemDescription = {"Golden and crispy", "Cheesy with a side of chips", "Pickles!!"
-            , "A lot of super foods"};
+    String[] menuItem;
+    String[] itemDescription;
     //Array to Handle the List View
     ArrayList<FoodMenu.MenuObject> foodMenu;
 
+    private void menuItemsAndDesc(){
+        menuItem = getResources().getStringArray(R.array.foodMenu);
+        itemDescription = getResources().getStringArray(R.array.foodDescription);
+    }
 
     @Override
     protected void onCreate(Bundle foodInstanceState) {
 
+        menuItemsAndDesc();
         super.onCreate(foodInstanceState);
         //These lines set the Title in the android bar and change
         // the symbol to the sandwich drawable
@@ -44,12 +47,12 @@ public class FoodMenu extends AppCompatActivity {
         foodMenu = new ArrayList<>();
         FoodMenuAdapter foodAdapter = new FoodMenuAdapter(this, foodMenu);
         ListView listView = (ListView) findViewById(R.id.listViewFood);
-        if (listView != null) listView.setAdapter(foodAdapter);
-        for (int i = 0; i < menuItem.length; i++){
+        if (listView != null) {listView.setAdapter(foodAdapter);}
+        for (int i = 0; i < menuItem.length;i++)
             foodAdapter.add(new FoodMenu.MenuObject(menuItem[i], itemDescription[i]));
         }
 
-    }
+
 
     //Object to encapsulate menuItem and description data for ListView
     private class MenuObject {
@@ -72,7 +75,8 @@ public class FoodMenu extends AppCompatActivity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        @NonNull
+        public View getView(int position, View convertView, @NonNull ViewGroup parent) {
 
             // Get the data item for this position
             MenuObject foodObject = getItem(position);
@@ -108,3 +112,4 @@ public class FoodMenu extends AppCompatActivity {
 
 
 }
+
